@@ -17,26 +17,26 @@ int main() {
         while (true) {
             nth++;
             cout<<"Faixa a pesar: ";
-			cin>>c>>f;
+	    cin>>c>>f;
             if ((c == f) && (c == n)) {
                 cout <<"Voce acertou em "<<nth<<" tentativas. "<<endl;
                 break;
             }
             cout<<"Peso: ";
             if ((n >= c) && (n <= f))
-				cout<<(f-c+1)*2-1<<endl; // nome=+, propriedade=semântica, tempo=compilação 
+		cout<<(f-c+1)*2-1<<endl; // nome=+, propriedade=semântica, tempo=compilação 
             else
-				cout<<(f-c+1)*2<<endl;
+		cout<<(f-c+1)*2<<endl;
         }
-	    cout << endl << "Agora eu adivinho. Pense em um numero entre 1 e "<<ff<<". "<<endl;
+	cout << endl << "Agora eu adivinho. Pense em um numero entre 1 e "<<ff<<". "<<endl;
         ntc = 0;  c = 1;  f = ff;
         ComputadorJoga(c, f);
         if (ntc > nth)
-			cout<<"Voce ganhou."<<endl;
+	    cout<<"Voce ganhou."<<endl;
         else if (ntc < nth)
-			cout<<"Ganhei."<<endl;
+	    cout<<"Ganhei."<<endl;
         else
-			cout<<"Empate."<<endl;
+	    cout<<"Empate."<<endl;
     }
     return 0;
 }
