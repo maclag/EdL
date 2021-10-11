@@ -10,7 +10,7 @@ void ComputadorJoga(int c, int f);
 int main() {
     srand(time(NULL));
     ff = 20; // nome=ff, propriedade=endereço, tempo=execução
-    while (true) {
+    while (true) { // nome=while, propriedade=implementação, tempo=especificação
         cout << endl << "Deve ser escolhido um numero entre 1 e "<<ff<<". Primeiro voce adivinha."<<endl;
         n = rand()%ff+1; // nome=rand, propriedade=implementação, tempo=ligação
         nth = 0;
