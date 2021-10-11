@@ -7,18 +7,18 @@ int n, c, f, p, nth, ntc, ff; // nome=n, propriedade=endereço, tempo=carregamen
 
 void ComputadorJoga(int c, int f);
 
-int main() {	
-	srand(time(NULL));
+int main() {
+    srand(time(NULL));
     ff = 20; // nome=ff, propriedade=endereço, tempo=execução
-    while(true){ // nome=while, propriedade=implementação, tempo=especificação
-	    cout << endl << "Deve ser escolhido um numero entre 1 e "<<ff<<". Primeiro voce adivinha."<<endl;
+    while (true) {
+        cout << endl << "Deve ser escolhido um numero entre 1 e "<<ff<<". Primeiro voce adivinha."<<endl;
         n = rand()%ff+1; // nome=rand, propriedade=implementação, tempo=ligação
         nth = 0;
         while (true) {
-            nth++; 
+            nth++;
             cout<<"Faixa a pesar: ";
 			cin>>c>>f;
-            if ((c == f) && (c == n)){
+            if ((c == f) && (c == n)) {
                 cout <<"Voce acertou em "<<nth<<" tentativas. "<<endl;
                 break;
             }
@@ -37,8 +37,8 @@ int main() {
 			cout<<"Ganhei."<<endl;
         else
 			cout<<"Empate."<<endl;
-	}
-	return 0;
+    }
+    return 0;
 }
 
 // nome=ComputadorJoga, propriedade=tipo de retorno da função, tempo=compilação
