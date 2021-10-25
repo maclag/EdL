@@ -7,6 +7,8 @@ public class Example {
     }
 
     public void f (int x) throws Exception {
+        if (valor == 100)
+            throw new ArithmeticException("Erro - Divisão por 0!");
         if (x < 0)
             throw new NumberFormatException("Erro - Valor de x negativo: "+ x);
         if (x <= valor)
