@@ -10,7 +10,7 @@ def fmap (f):
 
 # Exemplo de teste:
 def square (x):
-    return x ** 2;
+    return x ** 2
 
 l = [2, 4, 6, 8, 10]
 fmap(square)
